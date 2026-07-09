@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Dependencies / build output
+node_modules/
+dist/
+build/
+
+# Local exports and temporary files
+*.local.*
+*.csv
+*.png
+tmp-*
+temp-*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

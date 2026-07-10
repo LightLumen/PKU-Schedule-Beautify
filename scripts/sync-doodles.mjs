@@ -28,11 +28,11 @@ const manifest = [
   ["zx", "round-owl.png"],
   ["zg", "politics-goat.png"],
   ["scio", "check-sheep.png"],
-  ["sps-deer", "sps-deer.png"],
-  ["lab-cat", "lab-cat.png"],
-  ["nurse-fox", "nurse-fox.png"],
-  ["hoodie-cow", "hoodie-cow.png"],
-  ["scholar-cat", "scholar-cat.png"]
+  ["sps", "sps-deer.png"],
+  ["pre-medicine", "lab-cat.png"],
+  ["nurse", "nurse-fox.png"],
+  ["gsm", "hoodie-cow.png"],
+  ["history", "scholar-cat.png"]
 ];
 
 const MAX_EDGE = 320;

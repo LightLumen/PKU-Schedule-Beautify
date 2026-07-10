@@ -12,7 +12,7 @@
 - 自动生成可编辑的期末安排时间轴和ddl(目前支持期末考试、随堂考试、大作业、论文)。
 - 支持将期末安排导出为 PNG 图片。
 - 支持按 Wakeup 课程表模板导出 CSV。
-- 所有课程数据和手动补充信息只保存在浏览器本地。
+- 门户课程响应只在当前页面内存中处理；手动补充信息和界面偏好仅保存在浏览器本地。
 
 ## 界面预览
 
@@ -22,8 +22,8 @@
 
 ## 安装
 目前支持chrome内核浏览器，推荐使用Edge或Chrome。
-1. 打开edge浏览器右上角三个点，下面找到插件（直接点右侧链接也可），安装 [Tampermonkey（篡改猴）](https://www.tampermonkey.net/)。下载黑色的就行。
-2. 点击[课表美化](extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/ask.html?aid=75e21e66-86b2-4e42-b645-7d9260547296)下载脚本
+1. 打开edge浏览器右上角三个点，下面找到扩展（直接点右侧链接也可），安装 [Tampermonkey（篡改猴）](https://www.tampermonkey.net/)。下载黑色的就行。
+2. 点击[课表美化](https://greasyfork.org/zh-CN/scripts/586285-pku-%E8%AF%BE%E8%A1%A8%E7%BE%8E%E5%8C%96%E4%B8%8E%E6%9C%9F%E6%9C%AB%E5%AE%89%E6%8E%92)下载脚本
 
 下载过PKU-ART2（教学网美化）的忽略以下步骤
 
@@ -58,7 +58,7 @@
 
 ## 隐私
 
-脚本不保存账号密码，不读取或上传 Cookie。课程数据和你手动编辑的补充信息保存在当前浏览器的 `localStorage` 中。
+脚本不保存账号密码，不读取或上传 Cookie。门户课程响应不会持久化；你手动编辑的补充信息和界面偏好保存在当前浏览器的 `localStorage` 中。
 
 ## 兼容性
 

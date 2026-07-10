@@ -3,36 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>原图装饰化预览</title>
+  <title>课表装饰素材预览</title>
   <style>
     :root{color-scheme:light dark;--bg:#fbf4e8;--surface:#fffdf8;--text:#2a1d17;--muted:#715f52;--border:#e2cdae;--cell:#6a710b;--cellText:#fff7d5}
     @media (prefers-color-scheme:dark){:root{--bg:#18110d;--surface:#241812;--text:#fff0df;--muted:#d5bda1;--border:#57402f;--cell:#384009;--cellText:#fff0df}}
-    *{box-sizing:border-box} body{margin:0;padding:32px;font-family:"Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
-    h1{font-size:22px;margin:0 0 8px} p{margin:0 0 24px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;max-width:980px}
-    figure{margin:0;padding:18px;border:1px solid var(--border);background:var(--surface)}
+    *{box-sizing:border-box}
+    body{margin:0;padding:32px;font-family:"Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
+    h1{font-size:22px;margin:0 0 8px}
+    p{margin:0 0 24px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;max-width:1180px}
+    figure{margin:0;padding:16px;border:1px solid var(--border);background:var(--surface)}
     figure img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain;background:linear-gradient(45deg,rgba(0,0,0,.035) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.035) 75%),linear-gradient(45deg,rgba(0,0,0,.035) 25%,transparent 25%,transparent 75%,rgba(0,0,0,.035) 75%);background-size:18px 18px;background-position:0 0,9px 9px}
-    figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
-    .samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:980px;margin-top:30px}
-    .cell{min-height:190px;padding:14px;border:1px solid rgba(0,0,0,.12);background:var(--cell);color:var(--cellText);position:relative;overflow:hidden;box-shadow:inset 0 -26px 34px rgba(0,0,0,.08)}
-    .cell strong{display:block;font-size:17px;line-height:1.25}.cell span{display:block;margin-top:4px;font-size:14px;line-height:1.35}.cell img{position:absolute;right:4px;bottom:0;width:112px;max-height:118px;object-fit:contain;opacity:.2;filter:saturate(.82);pointer-events:none}
-    .cell:nth-child(2){background:#2f6782}.cell:nth-child(3){background:#755e12}.cell:nth-child(4){background:#395f57}
+    figcaption{margin-top:10px;font-size:13px;color:var(--muted);word-break:break-all}
+    .samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:1180px;margin-top:30px}
+    .cell{min-height:190px;padding:14px;border:1px solid rgba(0,0,0,.12);background:var(--sample-bg,var(--cell));color:var(--cellText);position:relative;overflow:hidden;box-shadow:inset 0 -26px 34px rgba(0,0,0,.08)}
+    .cell strong{display:block;font-size:17px;line-height:1.25}
+    .cell span{display:block;margin-top:4px;font-size:14px;line-height:1.35}
+    .cell img{position:absolute;right:4px;bottom:0;width:112px;max-height:118px;object-fit:contain;opacity:.2;filter:saturate(.82);pointer-events:none}
   </style>
 </head>
 <body>
-  <h1>原图装饰化预览</h1>
-  <p>不重画形象，只裁剪、去背景、柔化颜色；下方模拟低透明度课表装饰效果。</p>
+  <h1>课表装饰素材预览</h1>
+  <p>不重画形象，只做裁剪、去背景和压缩；下方模拟低透明度课表装饰效果。</p>
   <div class="grid">
-    <figure><img src="bear-front.png" alt="正视小熊"><figcaption>bear-front.png</figcaption></figure>
-    <figure><img src="deer.png" alt="小鹿"><figcaption>deer.png</figcaption></figure>
-    <figure><img src="robot.png" alt="机器人"><figcaption>robot.png</figcaption></figure>
-    <figure><img src="chick.png" alt="小黄鸡"><figcaption>chick.png</figcaption></figure>
+    <figure><img src="bear-front.png" alt="正视小熊"><figcaption>bear-front.png · sis</figcaption></figure>
+    <figure><img src="deer.png" alt="小鹿"><figcaption>deer.png · sky</figcaption></figure>
+    <figure><img src="robot.png" alt="机器人"><figcaption>robot.png · gy</figcaption></figure>
+    <figure><img src="chick.png" alt="小黄鸡"><figcaption>chick.png · sms</figcaption></figure>
+    <figure><img src="lion-cheer.png" alt="加油小狮子"><figcaption>lion-cheer.png · xk</figcaption></figure>
+    <figure><img src="hex-smile.png" alt="笑脸六边形"><figcaption>hex-smile.png · hy</figcaption></figure>
+    <figure><img src="round-sign.png" alt="猫帽圆团"><figcaption>round-sign.png · wy</figcaption></figure>
+    <figure><img src="econ-deer.png" alt="经院小鹿"><figcaption>econ-deer.png · jy</figcaption></figure>
+    <figure><img src="earth-chick.png" alt="地球小鸡"><figcaption>earth-chick.png · dk</figcaption></figure>
+    <figure><img src="sprout-deer.png" alt="幼芽小鹿"><figcaption>sprout-deer.png · hk</figcaption></figure>
+    <figure><img src="waving-otter.png" alt="挥手水獭"><figcaption>waving-otter.png · kg</figcaption></figure>
+    <figure><img src="phoenix-chick.png" alt="火羽小鸟"><figcaption>phoenix-chick.png · art</figcaption></figure>
+    <figure><img src="round-owl.png" alt="沉思猫头鹰"><figcaption>round-owl.png · zx</figcaption></figure>
+    <figure><img src="politics-goat.png" alt="政字小羊"><figcaption>politics-goat.png · zg</figcaption></figure>
+    <figure><img src="check-sheep.png" alt="举牌小羊"><figcaption>check-sheep.png · scio</figcaption></figure>
+    <figure><img src="sps-deer.png" alt="白袍小鹿"><figcaption>sps-deer.png · sps-deer</figcaption></figure>
+    <figure><img src="lab-cat.png" alt="实验猫"><figcaption>lab-cat.png · lab-cat</figcaption></figure>
+    <figure><img src="nurse-fox.png" alt="护士小狐"><figcaption>nurse-fox.png · nurse-fox</figcaption></figure>
+    <figure><img src="hoodie-cow.png" alt="卫衣小牛"><figcaption>hoodie-cow.png · hoodie-cow</figcaption></figure>
+    <figure><img src="scholar-cat.png" alt="学者小猫"><figcaption>scholar-cat.png · scholar-cat</figcaption></figure>
   </div>
   <div class="samples">
-    <div class="cell"><strong>数字电路与系统设计</strong><span>时间：1-15周 · 双周</span><span>地点：二教319</span><img src="bear-front.png" alt=""></div>
-    <div class="cell"><strong>环境经济学</strong><span>时间：1-15周 · 每周</span><span>教师：龙显灵</span><img src="deer.png" alt=""></div>
-    <div class="cell"><strong>电子信息学中的机器学习</strong><span>时间：1-15周 · 单周</span><span>地点：理教408</span><img src="robot.png" alt=""></div>
-    <div class="cell"><strong>应用物理研究实践</strong><span>时间：1-15周 · 每周</span><span>教师：孙伟</span><img src="chick.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#6a710b"><strong>正视小熊示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教200</span><img src="bear-front.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#2f6782"><strong>小鹿示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教201</span><img src="deer.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#755e12"><strong>机器人示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教202</span><img src="robot.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#395f57"><strong>小黄鸡示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教203</span><img src="chick.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#7a4f21"><strong>加油小狮子示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教204</span><img src="lion-cheer.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#4f5d64"><strong>笑脸六边形示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教205</span><img src="hex-smile.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#755071"><strong>猫帽圆团示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教206</span><img src="round-sign.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#5e5137"><strong>经院小鹿示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教207</span><img src="econ-deer.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#436b55"><strong>地球小鸡示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教208</span><img src="earth-chick.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#71633a"><strong>幼芽小鹿示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教209</span><img src="sprout-deer.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#736246"><strong>挥手水獭示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教210</span><img src="waving-otter.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#71463f"><strong>火羽小鸟示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教211</span><img src="phoenix-chick.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#4f596d"><strong>沉思猫头鹰示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教212</span><img src="round-owl.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#5f5a28"><strong>政字小羊示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教213</span><img src="politics-goat.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#7a493f"><strong>举牌小羊示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教214</span><img src="check-sheep.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#52683e"><strong>白袍小鹿示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教215</span><img src="sps-deer.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#3f6370"><strong>实验猫示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教216</span><img src="lab-cat.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#7a5445"><strong>护士小狐示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教217</span><img src="nurse-fox.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#714652"><strong>卫衣小牛示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教218</span><img src="hoodie-cow.png" alt=""></div>
+    <div class="cell" style="--sample-bg:#4b6376"><strong>学者小猫示例</strong><span>时间：1-15周 · 每周</span><span>地点：二教219</span><img src="scholar-cat.png" alt=""></div>
   </div>
 </body>
 </html>

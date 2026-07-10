@@ -10,12 +10,13 @@ Thumbs.db
 node_modules/
 dist/
 build/
-assets/
 
 # Local exports and temporary files
 *.local.*
 *.csv
 *.png
+!img/
+!img/*.png
 tmp-*
 temp-*
 

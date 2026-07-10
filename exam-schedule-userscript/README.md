@@ -9,12 +9,16 @@
 - 保留课程颜色、单双周、星期、节次等核心信息。
 - 课程格显示时间、地点、教师、期末考试时间、期末考试地点等字段。
 - 课程格空白较多时自动加入低透明院系吉祥物简笔画装饰。
-![课程表示意图](./img/course-table-example.png)
 - 自动生成可编辑的期末安排时间轴和ddl(目前支持期末考试、随堂考试、大作业、论文)。
 - 支持将期末安排导出为 PNG 图片。
-![期末安排示意图](./img/timeline-example.png)
 - 支持按 Wakeup 课程表模板导出 CSV。
 - 所有课程数据和手动补充信息只保存在浏览器本地。
+
+## 界面预览
+
+![课程表示意图](./img/course-table-example.png)
+
+![期末安排示意图](./img/timeline-example.png)
 
 ## 安装
 目前支持chrome内核浏览器，推荐使用Edge或Chrome。
@@ -23,7 +27,9 @@
 
 下载过PKU-ART2（教学网美化）的忽略以下步骤
 
-3. 回到插件，鼠标移到插件上，在弹出的左侧菜单选“管理插件”，开启开发人员模式。之后点开篡改猴的详细信息，设置权限如下：![权限](./img/setting-example.png)
+3. 回到插件，鼠标移到插件上，在弹出的左侧菜单选“管理插件”，开启开发人员模式。之后点开篡改猴的详细信息，设置权限如下：
+
+   ![权限设置示意图](./img/setting-example.png)
 
 ## 使用
 
@@ -67,6 +73,18 @@
 ```bash
 node --check pku-exam-timeline.user.js
 ```
+
+吉祥物源 PNG 保存在仓库外的本地 `assets/doodles-raster` 目录，运行时图片则以内嵌 Base64 的形式保存在 userscript 中。更新素材后，在本目录执行：
+
+```bash
+# 检查源 PNG、内嵌 Base64、素材映射和 userscript 语法
+node ../scripts/sync-doodles.mjs --check
+
+# 将本地源 PNG 重新嵌入 userscript，并再次完成上述检查
+node ../scripts/sync-doodles.mjs --write
+```
+
+同步脚本会检查 PNG 格式、透明通道、最长边不超过 320px、单图不超过 64 KiB、内容不重复，以及预览页中的文件名与内部标识是否一致，避免手工替换 Base64 时出现漏图、错图或语法错误。
 
 ## License
 

@@ -9,7 +9,7 @@ import {spawnSync} from "node:child_process";
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(scriptDir, "..");
 const assetDir = join(repoRoot, "assets", "doodles-raster");
-const userscriptPath = join(repoRoot, "exam-schedule-userscript", "pku-exam-timeline.user.js");
+const userscriptPath = join(repoRoot, "pku-exam-timeline.user.js");
 const previewPath = join(assetDir, "index.html");
 
 const manifest = [
